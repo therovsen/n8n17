@@ -118,16 +118,16 @@ services:
       n8n-import:
         condition: service_completed_successfully
 
-  qdrant:
-    image: qdrant/qdrant
-    hostname: qdrant
-    container_name: qdrant
-    networks: ['demo']
-    restart: unless-stopped
-    ports:
-      - 127.0.0.1:6333:6333
-    volumes:
-      - qdrant_storage:/qdrant/storage
+#  qdrant:
+#    image: qdrant/qdrant
+#    hostname: qdrant
+#    container_name: qdrant
+#    networks: ['demo']
+#    restart: unless-stopped
+#    ports:
+#      - 127.0.0.1:6333:6333
+#    volumes:
+#      - qdrant_storage:/qdrant/storage
 
 #  ollama-cpu:
 #    profiles: ["cpu"]
